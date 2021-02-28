@@ -1091,6 +1091,31 @@ Two separate 2-Tariff meters (e.g. from Fairenergie Reutlingen) are readout by t
 ```
 -----
 
+-----
+
+### EasyMeter Q3M (SML)
+
+Two separate 2-Tariff meters (e.g. from Stadtwerke Badsalzuflen) are readout by the same Tasmota device.
+
+```
+>D
+>B
+=>sensor53 r
+>M 1
++1,3,s,16,9600,Q3M
+1,77070100010800ff@1000,Summe,kWh,Power_Sum,7
+1,77070100010801ff@1000,Tarif 1,kWh,Power_T1,7
+1,77070100010802ff@1000,Tarif 2,kWh,Power_T2,7
+1,77070100100700ff@1,Verbrauch,W,Power_Use_Sum,3
+1,77070100240700ff@1,Verbrauch L1,W,Power_Use_1,3
+1,77070100380700ff@1,Verbrauch L2,W,Power_Use_2,3
+1,770701004c0700ff@1,Verbrauch L3,W,Power_Use_3,3
+#
+```
+
+![image](https://user-images.githubusercontent.com/78925945/109425405-60e62080-79e8-11eb-8ab3-919e29c97240.png)
+
+-----
 
 ### Apator APOX+ (SML)
 
